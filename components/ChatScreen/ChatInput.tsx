@@ -46,10 +46,10 @@ export const ChatInput: FC<Pick<IChat, "theme">> = ({ theme: chatTheme }) => {
   ) as HTMLDivElement;
   const replyOpen = useSelector((state: STATE) => state.chat.messageToReplyTo)!;
 
-  const addEmoji = (e) => {
+  const addEmoji = (e: any) => {
     let sym = e.unified.split("-");
-    let codesArray = [];
-    sym.forEach((el) => codesArray.push("0x" + el));
+    let codesArray: any[] = [];
+    sym.forEach((el: any) => codesArray.push("0x" + el));
     let emoji = String.fromCodePoint(...codesArray);
     setInput(input + emoji);
   };

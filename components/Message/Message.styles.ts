@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ChatThemeI, Theme } from "../../db/types";
+import { ChatThemeI } from "../../db/types";
 import { ContainerProps, ImageProps, ToolProps } from "./Message.types";
 
 export const MessageContainer = styled.div<ContainerProps>`
