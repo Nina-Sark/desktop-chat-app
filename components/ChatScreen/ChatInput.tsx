@@ -101,8 +101,8 @@ export const ChatInput: FC<Pick<IChat, "theme">> = ({ theme: chatTheme }) => {
 
   const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
-    const file = e.target.files[0];
-    setImageFile(file);
+    const file = e?.target?.files?.[0]
+    setImageFile(file)
   };
 
   const handleUpload = (fileName: string, file: any) => {
@@ -175,7 +175,7 @@ export const ChatInput: FC<Pick<IChat, "theme">> = ({ theme: chatTheme }) => {
 
       <InputContainer style={{ position: "relative" }}>
         <div>
-          <label for="img_file">
+          <label htmlFor="img_file">
             <MdOutlineImage id="icon" />
           </label>
           <input
