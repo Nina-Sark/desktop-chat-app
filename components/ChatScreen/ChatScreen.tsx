@@ -48,7 +48,7 @@ export const ChatScreen: FC<IChat> = ({ theme, participant, messages }) => {
         ))}
       </MessagesContainer>
 
-      { messageToReplyTo !== null &&  <Reply type={messageToReplyTo?.type} message={messageToReplyTo[messageToReplyTo?.type]}/>  }
+      { messageToReplyTo !== null &&  <Reply type={messageToReplyTo?.type} message={messageToReplyTo[messageToReplyTo?.type] as string}/>  }
       <ChatInput theme={theme}/>
     </ChatContainerComponent>
   );
