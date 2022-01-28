@@ -355,6 +355,7 @@ export const createNewMessage = async (
     await setDoc(chatDoc, {
       lastActive: serverTimestamp(),
       participants: [receiverEmail, currentUserEmail],
+      theme : null
     });
     const newChatId: string = chatDoc?.id;
     await createReceiverNewMessage(
