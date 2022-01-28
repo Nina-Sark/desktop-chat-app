@@ -8,9 +8,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
+    "@types/emoji-mart": "^3.0.9",
+    "@types/js-cookie": "^3.0.1",
+    "@types/react-redux": "^7.1.22",
+    "@types/styled-components": "^5.1.20",
+    "babel-plugin-styled-components": "^2.0.2",
+    "emoji-mart": "^3.0.1",
+    "firebase": "^9.6.3",
+    "i": "^0.3.7",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
     "next": "12.0.8",
+    "next-redux-wrapper": "^7.0.5",
+    "next-transpile-modules": "^9.0.0",
+    "npm": "^8.3.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-firebase-hooks": "^4.0.2",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.6",
+    "react-spinners-kit": "^1.9.1",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/node": "17.0.9",
