@@ -24,7 +24,7 @@ import {
   getMessageToReplyTo,
   getShowDownBtn,
 } from "../../state/reducers/ChatReducer";
-import { ChatThemeI, Theme, USER } from "../../db/types";
+import { ChatThemeI, USER } from "../../db/types";
 import { RemovedMessage } from "./RemovedMessage";
 import { stat } from "fs";
 import { handleRemoveMessage } from "../../db/utils";
@@ -103,7 +103,7 @@ export const Message: FC<MessageProps> = ({
       getMessageToReplyTo({
         id: id as string,
         type,
-        [type]: messageContent[type],
+        [type]: messageContent![type],
       })
     );
   };
@@ -170,7 +170,7 @@ export const Message: FC<MessageProps> = ({
               style={{
                 display: "flex",
                 justifyContent:
-                  sentBy === user?.email ? "flex-end" : "flex-start",
+                  sentBy?.username === (user?.email as string) ? "flex-end" : "flex-start",
                 width: "max-content",
               }}
             >
