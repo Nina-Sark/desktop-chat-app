@@ -1,4 +1,4 @@
-import { ChatThemeI, Theme } from "../../db/types";
+import { ChatThemeI } from "../../db/types";
 
 export interface MessageProps {
   id?: string;
